@@ -1,0 +1,40 @@
+% титульный лист без блоков руководителей
+\makeatletter
+\renewcommand{\CDMakeTitle}
+{
+\thispagestyle{empty}
+\shapka
+%\vspace{0.5cm}
+\begin{center}
+%\parbox{8cm}{
+%\raggedright
+\CYRK\cyra\cyrf\cyre\cyrd\cyrr\cyra\ \@chair
+%}
+\end{center}
+
+\vspace{14pt}
+\vspace{1cm}
+{\centering
+\textbf{\MakeUppercase{\@title}}
+\\[0.3cm]
+{\@workname}
+
+}
+
+\vspace{1.5cm}
+\begin{flushleft}
+\@studenttitle\ \@course\ \cyrk\cyru\cyrr\cyrs\cyra\ \@group\ \cyrg%
+\cyrr\cyru\cyrp\cyrp\cyrery\\
+\@spectype\ \@napravlenie\\
+\@department\\
+\@author
+\end{flushleft}
+\vfill
+
+\vfill
+{\centering{\cyr\CYRS\cyra\cyrr\cyra\cyrt\cyro\cyrv\ \@date}
+
+}
+\newpage
+}
+\makeatother

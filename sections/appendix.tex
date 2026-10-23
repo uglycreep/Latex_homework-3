@@ -1,0 +1,24 @@
+\section{Исходный код программы}
+\label{app:source}
+Программа находится в файле \texttt{code/search.py}. Для запуска
+из корня проекта используется команда \verb|python3 code/search.py|.
+Разделитель столбцов в выводе --- точка с запятой.
+
+\captionof{listing}{Функции поиска}
+\label{code:search}
+\inputminted[firstline=1,lastline=24]{python}{code/search.py}
+
+\clearpage
+\captionof{listing}{Запуск эксперимента}
+\label{code:experiment}
+\inputminted[firstline=27,firstnumber=27]{python}{code/search.py}
+
+Чтобы пересоздать изображения, можно выполнить
+\verb|python3 code/plots.py|. Для этого нужен пакет \texttt{matplotlib}.
+Для сборки документа он не требуется: готовые изображения уже находятся
+в папке \texttt{images}. Исходный код построения приведён
+в листинге~\ref{code:plots}.
+\clearpage
+\captionof{listing}{Построение графиков}
+\label{code:plots}
+\inputminted{python}{code/plots.py}
